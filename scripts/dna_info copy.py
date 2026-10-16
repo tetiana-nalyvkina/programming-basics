@@ -10,6 +10,7 @@ print (f"RNA sequence: {seq.replace("T", "U")}")
 complement = seq.replace ("A", "t").replace("T", "a").replace("C", "g").replace("G", "c")
 rev_comp = complement.upper()[::-1]
 print (f"Reverse complement: {rev_comp}")
+print (f"Is there a start codon? {"ATG" in seq}")
 st_cod = seq.find("ATG")
 if st_cod != -1:
     print (f"Start codon at position {st_cod}")
